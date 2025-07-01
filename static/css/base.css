@@ -49,11 +49,19 @@ body {
 }
 
 .text-black {
+    color: black !important;
+}
+
+.text-white {
     color: white !important;
 }
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.bg-black {
+    background: black !important;
 }
 
 /* ------------------------------ media queries */

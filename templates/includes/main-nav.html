@@ -19,7 +19,7 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Rating</a>
                 <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">All Equipment</a>
+                <a href="{% url 'products' %}?category=equipment" class="dropdown-item">All Equipment</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -30,7 +30,7 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Rating</a>
                 <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">Clothing</a>
+                <a href="{% url 'products' %}?category=workwear" class="dropdown-item">Clothing</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -41,7 +41,7 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Rating</a>
                 <a href="" class="dropdown-item">By Category</a>
-                <a href="" class="dropdown-item">Software</a>
+                <a href="{% url 'products' %}?category=software" class="dropdown-item">Software</a>
             </div>
         </li>
     </ul>

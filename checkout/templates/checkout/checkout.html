@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -37,7 +38,7 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
-                            <a href="{% 'product_detail' item.product.id %}">
+                            <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
                                     <img src="{{ item.product.image.url }}" class="w-100" alt="{{ product.name }}">
                                 {% else %}
